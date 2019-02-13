@@ -1,0 +1,41 @@
+{
+ :style [:how-to-ns :binding-nl :keyword-respect-nl :extend-nl :justified :community]
+ :map {:comma? false :force-nl? true :key-order [:name :version :paths :deps :alias :dev] :lift-ns? false}
+ :fn-map {"testing" :arg1-force-nl
+          "doseq" :arg1-force-nl
+          "->" :noarg1-body
+          "->>" :force-nl-body
+          "defn" :arg1-force-nl
+          "fn" :arg1-force-nl
+          "if" :arg1-force-nl
+          "swap!" :list
+          "do" :flow
+          "try" :flow
+          "catch" :arg2
+          "when" :arg1-force-nl
+          "when-not" :arg1-force-nl
+          "go" :flow
+          "go-loop" :fn
+          "comment" :flow
+          "debug" :comment
+          "with-chan" :arg1-force-nl
+          "with-out-str" :flow
+          "with-open" :arg1-force-nl
+          "with-application" :arg1-force-nl}
+ :binding {:force-nl? true}
+ :pair {:force-nl? true}
+ :fn {:force-nl? true}
+ :list {:indent-arg nil}
+ :width 120
+ :comment {:count? false :wrap? false}
+ }
+
+;; NOTE(pyoung):
+;; DONT put this comment into the config-map or put on upper than config-map.
+;; you must put `{:search-config? true}` to your ~/.zprintrc
+;; ref: https://github.com/kkinnear/zprint
+;; ref: https://github.com/kkinnear/zprint/issues/93
+;; ref: doc/arch/0042-line-length.md
+;; cmd: rake install_zprint
+;; :parse-string-all? true
+;; :parse {:interpose "\n\n"}

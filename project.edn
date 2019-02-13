@@ -1,0 +1,7 @@
+{:project     'cljpyoung.tasks.changelog
+ :version     "0.0.1-SNAPSHOT"
+ :description "task: generate changelog"
+ :url         "https://github.com/netpyoung/cljpyoung.tasks.changelog"
+ :scm         {:url "https://github.com/netpyoung/cljpyoung.tasks.changelog"}
+ :license     {"Eclipse Public License"
+               "http://www.eclipse.org/legal/epl-v10.html"}}

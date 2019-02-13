@@ -1,0 +1,16 @@
+# Changelog
+
+Changelog for {{ownerName}} {{repoName}}.
+
+{{#tags}}
+## [{{name}}]()
+ {{#issues}}
+  {{#commits}}
+- [{{{messageTitle}}}](/{{ownerName}}/{{repoName}}/commit/{{hash}})
+{{#messageBodyItems}}
+  + {{.}}
+
+{{/messageBodyItems}}
+  {{/commits}}
+ {{/issues}}
+{{/tags}}

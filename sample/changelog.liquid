@@ -1,0 +1,15 @@
+# Changelog
+
+Changelog for {{ changelog.ownerName }} {{ changelog.repoName }}.
+
+{%- for tag in changelog.tags -%}
+## [{{ tag.name }}]()
+ {%- for issue in tag.issues -%}
+  {% for commit in issue.commits %}
+- [{{ commit.messageTitle }}](/{{ commit.ownerName }}/{{ commit.repoName }}/commit/{{ commit.hash }})
+   {% for item in commit.messageBodyItems %}
+ + {{ item }}
+   {% endfor %}
+  {% endfor %}
+ {%- endfor -%}
+{%- endfor -%}
