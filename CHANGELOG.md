@@ -1,6 +1,6 @@
 # Changelog
 
-Changelog for  .## [Unreleased]()
-- [init](///commit/cba1ae0c0fc7d91)
+Changelog for netpyoung cljpyoung.tasks.changelog.## [Unreleased]()
+- [update doc](https://github.com/netpyoung/cljpyoung.tasks.changelog/commit/527f376a8ed5b08)
    
   

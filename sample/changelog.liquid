@@ -6,7 +6,7 @@ Changelog for {{ changelog.ownerName }} {{ changelog.repoName }}.
 ## [{{ tag.name }}]()
  {%- for issue in tag.issues -%}
   {% for commit in issue.commits %}
-- [{{ commit.messageTitle }}](/{{ commit.ownerName }}/{{ commit.repoName }}/commit/{{ commit.hash }})
+- [{{ commit.messageTitle }}](https://github.com/netpyoung/cljpyoung.tasks.changelog/commit/{{ commit.hash }})
    {% for item in commit.messageBodyItems %}
  + {{ item }}
    {% endfor %}
